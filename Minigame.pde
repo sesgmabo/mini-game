@@ -31,7 +31,7 @@ void draw(){
   }
   
   noFill(); 
-  stroke(0); 
+  stroke(0); // Set outline color to black
   
   rectMode(CENTER);
   circle(170, height/2, 230);
@@ -46,6 +46,7 @@ void draw(){
   drawTextBox(700, 145, "Memory Match");
   drawTextBox(950, 145, "Snake");
   
+  // Change cursor appearance based on hovering status
   if (isHoveringRect1 || isHoveringRect2 || isHoveringRect3) {
     cursor(HAND);
   } else {
@@ -63,6 +64,7 @@ void drawTextBox(float x, float y, String text) {
 }
 
 void drawRainbowBackground() {
+  // Draw smooth and flowing rainbow background
   for (int i = 0; i < width; i++) {
     float r = 127 + 127 * sin(rainbowOffset + TWO_PI * i / width);
     float g = 127 + 127 * sin(rainbowOffset + TWO_PI * i / width + TWO_PI / 3);
@@ -74,12 +76,15 @@ void drawRainbowBackground() {
 
 void mousePressed() {
   if (isHoveringRect1) {
+    // Open TicTacToe class
     TicTacToe ticTacToe = new TicTacToe();
     ticTacToe.setup();
   } else if (isHoveringRect2) {
+    // Open MemoryMatch class
     MemoryMatch memoryMatch = new MemoryMatch();
     memoryMatch.setup();
   } else if (isHoveringRect3) {
+    // Open Snake class
     Snake snake = new Snake();
     snake.setup();
   }
