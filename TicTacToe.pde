@@ -81,6 +81,7 @@ class Tictactoe extends Screen {
 
   void drawO(int x, int y) {
     ellipse(x * 200 + 100, y * 200 + 100, 175, 175);
+    fill (255,0,0);
   }
 
   void locator(int x, int y) {

@@ -90,13 +90,12 @@ void getInput(){
     currScreen = ticTacToe;
   } else if (isHoveringRect2) {
    
-    //currScreen = new Snake();
-    //MemoryMatch memoryMatch = new MemoryMatch();
-    //memoryMatch.setup();
+    Memorymatch memorymatch = new Memorymatch();
+    currScreen = memorymatch;
   } else if (isHoveringRect3) {
     
-    //Snake snake = new Snake();
-    //snake.setup();
+    Snake snake = new Snake();
+    currScreen = snake;
   } 
 }
   
