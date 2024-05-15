@@ -1,6 +1,4 @@
 class Memorymatch extends Screen {
- 
-  
   
   Memorymatch(){
     background(255);
