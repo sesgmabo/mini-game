@@ -2,6 +2,8 @@ class MainMenu extends Screen {
  PImage img1;
 PImage img2;
 PImage img3;
+PImage img4;
+PImage img5;
 boolean isHoveringRect1 = false;
 boolean isHoveringRect2 = false;
 boolean isHoveringRect3 = false;
@@ -15,17 +17,15 @@ MainMenu(){
   img1.resize(175, 175);
   img2 = loadImage("settingsicon.png");
   img2.resize(125, 125);
-  img3 = loadImage("TicTacToeBillede.png");
+  img3 = loadImage("TicTacToe-Billede.png");
   img3.resize(150,150);
-  
-  //currScreen = new Menu(); 
+  img4 = loadImage("4545719-200.png");
+  img4.resize(150,150);
+  img5 = loadImage("pngtree-portable-snake-game-lader-play-png-image_5164565.png");
+  img5.resize(150,150);
 }
 
 void show(){
-   //currScreen.show();
- // if state = 1
- //   snake.show();
- // if state == 0
   isHoveringRect1 = mouseX > 360 && mouseX < 540 && mouseY > height/2 - 200 && mouseY < height/2 + 200;
   isHoveringRect2 = mouseX > 610 && mouseX < 790 && mouseY > height/2 - 200 && mouseY < height/2 + 200;
   isHoveringRect3 = mouseX > 860 && mouseX < 1040 && mouseY > height/2 - 200 && mouseY < height/2 + 200;
@@ -50,6 +50,8 @@ void show(){
   image(img1, 85, 270);
   image(img2, 105, 500);
   image(img3, 375, 300);
+  image(img4, 625, 300);
+  image(img5, 875, 300);
   rect(450, height/2, 180, 400, 28);
   rect(700, height/2, 180, 400, 28);
   rect(950, height/2, 180, 400, 28);
