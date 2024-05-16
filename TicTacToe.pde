@@ -7,6 +7,7 @@ class Tictactoe extends Screen {
   int cnt;
   int play;
 
+//istedet for setup
   Tictactoe() {
     //size(600, 600);
     f = createFont("Arial", 16, true);
@@ -19,6 +20,7 @@ class Tictactoe extends Screen {
     play = 1;
   }
 
+//istedet for draw
   void show() {
     background(255, 255, 255);
     if (play != 0) {

@@ -1,6 +1,7 @@
 class MainMenu extends Screen {
  PImage img1;
 PImage img2;
+PImage img3;
 boolean isHoveringRect1 = false;
 boolean isHoveringRect2 = false;
 boolean isHoveringRect3 = false;
@@ -14,6 +15,8 @@ MainMenu(){
   img1.resize(175, 175);
   img2 = loadImage("settingsicon.png");
   img2.resize(125, 125);
+  img3 = loadImage("TicTacToeBillede.png");
+  img3.resize(150,150);
   
   //currScreen = new Menu(); 
 }
@@ -46,6 +49,7 @@ void show(){
   circle(170, height/2, 230);
   image(img1, 85, 270);
   image(img2, 105, 500);
+  image(img3, 375, 300);
   rect(450, height/2, 180, 400, 28);
   rect(700, height/2, 180, 400, 28);
   rect(950, height/2, 180, 400, 28);
